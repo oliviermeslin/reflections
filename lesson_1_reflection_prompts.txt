@@ -3,32 +3,43 @@ was introduced?
 
     The diff function allowed me to focus only on the lines that have been 
     changed between the two versions, so it helped me find easily the mistake,
-    and I could avoid comparing each and every line of the code.
+    and I could avoid comparing each and every line of the code. This relies on
+    the assumption that the older file didn't have a bug.
 
 How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-    Fill in your answer here
+    First, it would help me spot where I usually do coding mistakes.
+    Second, it would help me see how the structure of my code evolves over time,
+    how it becomes more complicated and better-suited to the question I deal 
+    with. That would help me defining the appropriate structure of the code.
+    Third, it could help me reuse pieces of code I wrote and deleted later.
 
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
-    Fill in your answer here
+	Pros:
+	- Commits reflect a logical step in the development of a project and hopefully correspond to a working code, whereas automatic backups may not make sense and contain code that doesn't work.
+	- It is possible to comment commits, so that one can keep track and make sense of the changes made to the code.
+	Cons:
+	- One can forget to commit.
+	- One has to be rigourous in writing clear and explicit comments.
 
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
-    Fill in your answer here
+Because version control systems were not designed for the same purpose: Git is very programming oriented, so it is essential to track related files together, whereas other systems are designed to store stand-alone documents, such as a MS Word document.
 
 How can you use the commands git log and git diff to view the history of files?
 
-    Fill in your answer here
+Git log allows me to have a summary of all the changes introduced in the code, with comments explaining each step.
+Git diff allows me to inspect the details of the changes introduced between two commits.
 
 How might using version control make you more confident to make changes that
 could break something?
 
-    Fill in your answer here
+I would be more confident because I would always be able to go back to the code as it was before the changes I introduced.
 
 Now that you have your workspace set up, what do you want to try using Git for?
 

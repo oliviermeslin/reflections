@@ -9,11 +9,23 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	Staging one file at a time, and using diff --staged to check that there is only one significant change.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Some situations:
+	- When I want to use a variant of the master code and keep track of this
+	variant;
+	- When I'm experimenting an important new feature and I'm not sure it will 
+	make it in the master version of the code.
+	Branches help keeping the workflow tidy and keeping track of all the 
+	versions of the code and all the relationship between the versions.
+
 How do the diagrams help you visualize the branch structure?
+
+	Diagrams give a visualisation of the relations between branches, and helps understanding from where one branch diverges from another, and what changes are available in each branch.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
